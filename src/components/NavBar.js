@@ -7,6 +7,7 @@ import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/NavBar.css";
+import resumePdf from "../assets/R_Amazon_standards.pdf";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { CloudDownloadSharp, FontDownloadOutlined } from "@material-ui/icons";
 
@@ -45,7 +46,7 @@ class NavBar extends React.Component {
               <OverlayTrigger
                 placement="bottom" // where the tooltip appears
                 overlay={<Tooltip id="resume-tooltip">Resume</Tooltip>}>
-                <Nav.Link href={`${process.env.PUBLIC_URL}/assets/R_Amazon_standards.pdf`} target="_blank">
+                <Nav.Link href={resumePdf} target="_blank">
                   <CloudDownloadSharp style={{ fontSize: 20 }}></CloudDownloadSharp>
                 </Nav.Link>
               </OverlayTrigger>
